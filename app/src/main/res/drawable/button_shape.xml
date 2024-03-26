@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="100dp" /> <!-- Zaokrąglenie rogów, wartość radius definiuje promień -->
+    <solid android:color="#FF5733" /> <!-- Kolor tła przycisku -->
+</shape>
