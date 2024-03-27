@@ -19,4 +19,5 @@
     <string name="dot">.</string>
     <string name="equal">=</string>
     <string name="percent">%</string>
+    <string name="button_clear">C</string>
 </resources>
