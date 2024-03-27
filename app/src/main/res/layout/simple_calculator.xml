@@ -4,139 +4,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="@color/black"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textViewDisplay"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="end"
-        android:textSize="24sp"
+        android:layout_gravity="bottom|end"
+        android:ellipsize="end"
+        android:gravity="bottom|end"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:autoSizeMaxTextSize="70sp"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/white"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.47"/>
+        app:layout_constraintGuide_percent="0.47" />
 
     <LinearLayout
         android:id="@+id/row1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/guideline"
-        app:layout_constraintBottom_toTopOf="@id/row2">
+        app:layout_constraintBottom_toTopOf="@id/row2"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
 
         <Button
             android:id="@+id/buttonAC"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_ac"
-            android:backgroundTint="#979595"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp" />
+            android:backgroundTint="#979595"
+            android:minHeight="70dp"
+            android:text="@string/button_ac" />
 
         <Button
             android:id="@+id/buttonPlusMinus"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/change_sign"
-            android:backgroundTint="#979595"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#979595"
+            android:minHeight="70dp"
+            android:text="@string/change_sign" />
 
         <Button
             android:id="@+id/buttonPercent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_clear"
-            android:backgroundTint="#979595"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#979595"
+            android:minHeight="70dp"
+            android:text="@string/button_clear" />
 
         <Button
             android:id="@+id/buttonDivide"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/divide"
-            android:backgroundTint="#FB5B28"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#FB5B28"
+            android:minHeight="70dp"
+            android:text="@string/divide" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/row2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/row3"
         app:layout_constraintStart_toStartOf="@id/row1"
-        app:layout_constraintTop_toBottomOf="@id/row1"
-        app:layout_constraintBottom_toTopOf="@id/row3">
+        app:layout_constraintTop_toBottomOf="@id/row1">
 
         <Button
             android:id="@+id/buttonSeven"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_7"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_7" />
 
         <Button
             android:id="@+id/button_8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_8"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_8" />
 
         <Button
             android:id="@+id/button_9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_9"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_9" />
 
         <Button
             android:id="@+id/buttonMultiply"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/multiply"
-            android:backgroundTint="#FB5B28"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#FB5B28"
+            android:minHeight="70dp"
+            android:text="@string/multiply" />
 
     </LinearLayout>
 
@@ -144,161 +150,164 @@
         android:id="@+id/row3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/row4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/row2"
-        app:layout_constraintBottom_toTopOf="@id/row4">
+        app:layout_constraintTop_toBottomOf="@id/row2">
 
         <Button
             android:id="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_4"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_4" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_5"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_5" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_6"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_6" />
 
         <Button
             android:id="@+id/buttonSubtract"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/subtract"
-            android:backgroundTint="#FB5B28"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#FB5B28"
+            android:minHeight="70dp"
+            android:text="@string/subtract" />
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/row4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/row5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/row3"
-        app:layout_constraintBottom_toTopOf="@id/row5">
+        app:layout_constraintTop_toBottomOf="@id/row3">
 
         <Button
             android:id="@+id/button1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_1"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp" />
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_1" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_2"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_2" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/number_3"
-            android:backgroundTint="#373535"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_3" />
 
         <Button
             android:id="@+id/buttonAdd"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonAdd"
-            android:backgroundTint="#FB5B28"
-            android:autoSizeMinTextSize="30sp"
             android:autoSizeMaxTextSize="70sp"
+            android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#FB5B28"
+            android:minHeight="70dp"
+            android:text="@string/buttonAdd" />
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/row5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/row4"
-        app:layout_constraintBottom_toTopOf="@id/guidelineBottom">
+        app:layout_constraintTop_toBottomOf="@id/row4">
 
         <Button
             android:id="@+id/button0"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="@string/number_0"
-            android:backgroundTint="#373535"
             android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/number_0" />
 
         <Button
             android:id="@+id/buttonDot"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/dot"
-            android:backgroundTint="#373535"
             android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#373535"
+            android:minHeight="70dp"
+            android:text="@string/dot" />
 
         <Button
             android:id="@+id/buttonEqual"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/equal"
-            android:backgroundTint="#FB5B28"
             android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:minHeight="70dp"/>
+            android:backgroundTint="#FB5B28"
+            android:minHeight="70dp"
+            android:text="@string/equal" />
 
     </LinearLayout>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineBottom"
         android:layout_width="wrap_content"

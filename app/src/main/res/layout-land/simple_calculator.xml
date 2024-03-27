@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="MissingDefaultResource">
+    tools:ignore="MissingDefaultResource"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/textViewDisplay"
@@ -38,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:autoSizeMinTextSize="25dp"
+            android:autoSizeMinTextSize="25sp"
             android:autoSizeTextType="uniform"
             android:backgroundTint="#979595"
             android:minHeight="50dp"
@@ -309,7 +310,6 @@
             android:autoSizeMinTextSize="25sp"
             android:autoSizeTextType="uniform"
             android:backgroundTint="#FB5B28"
-            android:minHeight="50dp"
             android:text="@string/equal" />
 
     </LinearLayout>
